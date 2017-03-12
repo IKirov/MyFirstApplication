@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context="com.ittalents.myfirstaplication.CreateAccount"
     android:orientation="vertical">
 
@@ -12,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Name"
+        
+        android:drawableBottom="@color/colorAccent"
         android:textStyle="italic"
         android:textColor="@color/colorPrimary"
         android:layout_marginLeft="5dp"
@@ -72,6 +75,7 @@
         android:id="@+id/button_registration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
         android:text="REGISTRATION"
         android:textStyle="bold"
         android:textSize="20sp"
