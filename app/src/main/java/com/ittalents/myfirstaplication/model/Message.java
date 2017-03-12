@@ -10,7 +10,7 @@ public class Message implements Comparable<Message> {
 	private String content;
 	private int iD;
 	private static int uniqueID = 1;
-
+	private int x = 0;
 	private Message(OLX.User sender, OLX.User receiver, String content) {
 		super();
 		this.sender = sender;
