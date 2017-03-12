@@ -1,6 +1,7 @@
-package Users;
+package com.ittalents.myfirstaplication.model;
 
-import java.time.LocalDate;
+
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -10,12 +11,12 @@ import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import Users.OLX.User.RegularUser;
-import Users.OLX.User.RegularUser.Category;
-import Users.OLX.User.RegularUser.Notice;
-import Users.OLX.User.RegularUser.SortNotice;
-import Users.OLX.User.RegularUser.StateGood;
-import Users.OLX.User.RegularUser.Type;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser.Category;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser.Notice;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser.SortNotice;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser.StateGood;
+import com.ittalents.myfirstaplication.model.OLX.User.RegularUser.Type;
 
 public class OLX {
 
@@ -254,7 +255,7 @@ public class OLX {
 				SortNotice act = SortNotice.ACTIVE;
 				if (poster.get(act).contains(n)) {
 					if (!poster.containsKey(arch)) {
-						poster.put(arch, new TreeSet<>());
+						poster.put(arch, new TreeSet<Notice>());
 					}
 					poster.get(arch).add(n);
 					poster.get(act).remove(n);
@@ -333,7 +334,7 @@ public class OLX {
 				private String mail;
 				private String gsm;
 				private String name;
-				private LocalDate date;
+				private Date date;
 				private int id;
 				// picture
 
@@ -349,7 +350,7 @@ public class OLX {
 					this.mail = user.getMail();
 					this.gsm = user.getGsm();
 					this.name = user.getName();
-					this.date = LocalDate.now();
+					this.date = new Date();
 					this.id = uniqueID;
 					RegularUser.this.uniqueID++;
 				}
@@ -466,7 +467,7 @@ public class OLX {
 					olx.ads.get(n.getCategory()).add(n);
 				}
 				if (!n.getOuterType().poster.containsKey(SortNotice.ACTIVE)) {
-					n.getOuterType().poster.put(OLX.User.RegularUser.SortNotice.ACTIVE, new TreeSet<>());
+					n.getOuterType().poster.put(OLX.User.RegularUser.SortNotice.ACTIVE, new TreeSet<Notice>());
 				}
 				n.getOuterType().poster.get(SortNotice.ACTIVE).add(n);
 

@@ -1,12 +1,12 @@
-package Users;
+package com.ittalents.myfirstaplication.model;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Date;
+
 
 public class Message implements Comparable<Message> {
 	private OLX.User sender;
 	private OLX.User receiver;
-	private LocalDateTime time;
+	private Date time;
 	private String content;
 	private int iD;
 	private static int uniqueID = 1;
@@ -15,7 +15,7 @@ public class Message implements Comparable<Message> {
 		super();
 		this.sender = sender;
 		this.receiver = receiver;
-		this.time = LocalDateTime.now();
+		this.time = new Date();
 		this.content = content;
 		this.iD = uniqueID;
 		uniqueID++;
@@ -27,7 +27,7 @@ public class Message implements Comparable<Message> {
 		return message;
 	}
 
-	LocalDateTime getTime() {
+	Date getTime() {
 		return this.time;
 	}
 
