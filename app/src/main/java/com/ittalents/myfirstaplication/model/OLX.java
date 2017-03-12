@@ -55,7 +55,7 @@ public class OLX {
 				}
 			}
 		}
-		System.out.println("Your mail or your password aren't correct! Pease, try again!");
+		System.out.println("Your mail or your password aren't correct! Please, try again!");
 	}
 
 	public void logOutUser(User.RegularUser user) {
