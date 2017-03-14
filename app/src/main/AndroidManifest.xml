@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".CreateAccount" />
         <activity android:name=".AdActivity" />
-        <activity android:name=".AdminControlPanelActivity"></activity>
+        <activity android:name=".AdminControlPanelActivity" />
+        <activity android:name=".CorrespondenceActivity"></activity>
     </application>
 
 </manifest>
