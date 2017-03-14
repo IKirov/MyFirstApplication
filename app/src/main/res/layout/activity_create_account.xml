@@ -5,81 +5,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context="com.ittalents.myfirstaplication.CreateAccount"
-    android:orientation="vertical">
+    tools:context="com.ittalents.myfirstaplication.CreateAccountActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:letterSpacing="6"
+        android:textStyle="italic"
+        android:fontFamily="serif"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/edit_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name"
-        
-        android:drawableBottom="@color/colorAccent"
+        android:maxLength="15"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:letterSpacing="6"
         android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="25dp"/>
+        android:fontFamily="serif"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/edit_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address"
+        android:maxLength="15"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        android:letterSpacing="6"
         android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"/>
+        android:fontFamily="serif"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/edit_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="E-mail"
+        android:maxLength="15"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:letterSpacing="6"
         android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"/>
+        android:fontFamily="serif"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
 
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:maxLength="20"
+        android:maxLength="15"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gsm"
+        android:letterSpacing="6"
         android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp"/>
+        android:fontFamily="serif"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/edit_gsm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GSM"
-        android:textStyle="italic"
-        android:textColor="@color/colorPrimary"
-        android:layout_marginLeft="5dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="25dp" />
+        android:maxLength="15"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
 
     <Button
         android:id="@+id/button_registration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
-        android:text="REGISTRATION"
+        android:text="@string/registration_button"
+        android:background="@drawable/main_button"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:background="@color/colorAccent"
-        android:layout_margin="30dp"/>
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"/>
 
 </LinearLayout>
