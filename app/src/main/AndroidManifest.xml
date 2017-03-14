@@ -19,7 +19,9 @@
         <activity android:name=".CreateAccount" />
         <activity android:name=".AdActivity" />
         <activity android:name=".AdminControlPanelActivity" />
-        <activity android:name=".CorrespondenceActivity"></activity>
+        <activity android:name=".CorrespondenceActivity" />
+        <activity android:name=".ActiveNoticeActivity" />
+        <activity android:name=".ArchivedNoticeActivity"></activity>
     </application>
 
 </manifest>
