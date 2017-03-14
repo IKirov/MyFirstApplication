@@ -136,21 +136,21 @@ public class OLX {
 			attemptedPassword = sc.nextLine();
 			
 			for (int index = 0; index <= attemptedPassword.length() - 1; index++) {
-				if (attemptedPassword.charAt(index) >= 97 && attemptedPassword.charAt(index) <= 122) {
+				if (attemptedPassword.charAt(index) >= 'a' && attemptedPassword.charAt(index) <= 'z') {
 					lowerCaseLetter = true;
 					break;
 				}
 			}
 			
 			for (int index = 0; index <= attemptedPassword.length() - 1; index++) {
-				if (attemptedPassword.charAt(index) >= 65 && attemptedPassword.charAt(index) <= 90) {
+				if (attemptedPassword.charAt(index) >= 'A' && attemptedPassword.charAt(index) <= 'Z') {
 					upperCaseLetter = true;
 					break;
 				}
 			}
 			
 			for (int index = 0; index <= attemptedPassword.length() - 1; index++) {
-				if (attemptedPassword.charAt(index) >= 48 && attemptedPassword.charAt(index) <= 57) {
+				if (attemptedPassword.charAt(index) >= '0' && attemptedPassword.charAt(index) <= '9') {
 					number = true;
 					break;
 				}
